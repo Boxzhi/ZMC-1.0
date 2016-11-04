@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReceiptAddressCell" id="KGk-i7-Jjw" customClass="ReceiptAddressCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周生生" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aJ-rN-NLd">
+                        <rect key="frame" x="10" y="8" width="48" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="QEJ-rB-pGi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13648298739" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4W-AJ-nML">
+                        <rect key="frame" x="171" y="8" width="99" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="LZX-f6-DLU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="江苏省苏州市工业园区若水路388号纳米大学科技园H4111" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3RX-Ef-XdC">
+                        <rect key="frame" x="10" y="37" width="260" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqc-ke-Q9T">
+                        <rect key="frame" x="285" y="31" width="27" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="27" id="NTA-mC-F4N"/>
+                            <constraint firstAttribute="height" constant="27" id="kum-rt-G0u"/>
+                        </constraints>
+                        <state key="normal" image="choose"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4aJ-rN-NLd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="0YX-g5-12u"/>
+                    <constraint firstItem="x4W-AJ-nML" firstAttribute="trailing" secondItem="3RX-Ef-XdC" secondAttribute="trailing" id="4cI-uC-IwE"/>
+                    <constraint firstItem="Uqc-ke-Q9T" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5SA-au-zym"/>
+                    <constraint firstItem="3RX-Ef-XdC" firstAttribute="top" secondItem="x4W-AJ-nML" secondAttribute="bottom" constant="8" id="CLd-v0-aA3"/>
+                    <constraint firstItem="Uqc-ke-Q9T" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="DAS-XU-uiS"/>
+                    <constraint firstItem="4aJ-rN-NLd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="GuW-VG-FRS"/>
+                    <constraint firstAttribute="trailing" secondItem="x4W-AJ-nML" secondAttribute="trailing" constant="50" id="Ve7-l2-gJ1"/>
+                    <constraint firstItem="x4W-AJ-nML" firstAttribute="centerY" secondItem="4aJ-rN-NLd" secondAttribute="centerY" id="ZC0-Zv-nv0"/>
+                    <constraint firstItem="3RX-Ef-XdC" firstAttribute="leading" secondItem="4aJ-rN-NLd" secondAttribute="leading" id="guD-rM-WSC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="selectBtn" destination="Uqc-ke-Q9T" id="C8O-JT-Fqc"/>
+                <outlet property="userAddress_lab" destination="3RX-Ef-XdC" id="JQO-Ez-0y2"/>
+                <outlet property="userMobile_lab" destination="x4W-AJ-nML" id="f1h-x7-fgk"/>
+                <outlet property="userName_lab" destination="4aJ-rN-NLd" id="Uth-fN-Hdi"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="choose" width="27" height="27"/>
+    </resources>
+</document>

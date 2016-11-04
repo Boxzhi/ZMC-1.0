@@ -1,0 +1,78 @@
+//
+//  HttpConfig.h
+//  ThailandGo
+//
+//  Created by Daniel on 15/10/15.
+//  Copyright © 2015年 Daniel. All rights reserved.
+//
+
+#import "CommonHttpAPI.h"
+#import "CommonRequestModel.h"
+
+#import "HomeHttpAPI.h"
+#import "HomeRequestModel.h"
+
+#import "ScenicHttpAPi.h"
+#import "ScenicRequestModel.h"
+
+
+
+#define ReleaseHost @"http://58.96.180.232:8082"
+#define DebugHost @"http://192.168.1.180:8080"
+//#define DebugHost @"http://192.168.1.113:8080"
+//#define DebugHost @"http://api.51xixi.me"
+
+
+
+
+
+/*
+ 景区模块接口链接
+ */
+
+//景区列表
+#define scenic_list_url @"/sanmao-api/scenic/list"
+
+//景区详情
+#define scenic_detail_url @"/sanmao-api/scenic/detail"
+
+//景区名称检索
+#define search_scenic_url @"/sanmao-api/scenic/search_scenic"
+
+//景点详情
+#define spot_detail_url @"/sanmao-api/scenic/spot/detail"
+
+//景点解说列表
+#define spot_list_url @"/sanmao-api/scenic/spot/list"
+
+//景区评论列表
+#define comment_list_url @"/sanmao-api/scenic/comment_list"
+
+//景区压缩包
+#define scenic_zip_url @"/sanmao-api/scenic/zip"
+
+//景区播报点
+#define broadcast_url @"/sanmao-api/scenic/broadcast/list"
+
+//景区图层
+#define map_layer_url @"/sanmao-api/scenic/map_layer"
+
+//景区兴趣点
+#define poi_list_url @"/sanmao-api/scenic/poi/list"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

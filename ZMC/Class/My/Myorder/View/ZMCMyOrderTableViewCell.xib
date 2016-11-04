@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ZMCMyOrderTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="375" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l5k-NK-F1I">
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shop_icon" translatesAutoresizingMaskIntoConstraints="NO" id="3Rc-w9-ufC">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3Rc-w9-ufC" secondAttribute="height" multiplier="5:4" id="com-xh-bBh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="周六鲜蔬直营店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8z-ly-2rJ">
+                                <frame key="frameInset" minX="31" minY="11" width="105" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="Mj1-HO-gCF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.32549019610000002" green="0.32549019610000002" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="订单号：837462839287" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfG-5C-Uda">
+                                <frame key="frameInset" minX="209" minY="12" width="158" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="H57-vS-UX8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.45882352939999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WfG-5C-Uda" firstAttribute="centerY" secondItem="P8z-ly-2rJ" secondAttribute="centerY" id="6dh-Ml-5lg"/>
+                            <constraint firstItem="3Rc-w9-ufC" firstAttribute="leading" secondItem="l5k-NK-F1I" secondAttribute="leading" constant="8" id="9ng-xC-EX6"/>
+                            <constraint firstItem="P8z-ly-2rJ" firstAttribute="centerY" secondItem="3Rc-w9-ufC" secondAttribute="centerY" id="ARg-3N-Be5"/>
+                            <constraint firstAttribute="height" constant="40" id="Jhv-t0-AKf"/>
+                            <constraint firstItem="3Rc-w9-ufC" firstAttribute="centerY" secondItem="l5k-NK-F1I" secondAttribute="centerY" id="Jxn-wY-BFY"/>
+                            <constraint firstAttribute="trailing" secondItem="WfG-5C-Uda" secondAttribute="trailing" constant="8" id="O4i-Qz-6JS"/>
+                            <constraint firstItem="P8z-ly-2rJ" firstAttribute="leading" secondItem="3Rc-w9-ufC" secondAttribute="trailing" constant="4" id="hWc-A9-Ymo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="l5k-NK-F1I" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8pG-VL-We3"/>
+                    <constraint firstItem="l5k-NK-F1I" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ZWs-jp-Hrn"/>
+                    <constraint firstAttribute="trailing" secondItem="l5k-NK-F1I" secondAttribute="trailing" id="yrk-rj-QdS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headView" destination="l5k-NK-F1I" id="1C1-LV-XZP"/>
+                <outlet property="orderNum" destination="WfG-5C-Uda" id="8Wi-qL-hEg"/>
+                <outlet property="shopName" destination="P8z-ly-2rJ" id="Fsd-lI-UGn"/>
+            </connections>
+            <point key="canvasLocation" x="-13" y="82"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="shop_icon" width="19" height="14"/>
+    </resources>
+</document>

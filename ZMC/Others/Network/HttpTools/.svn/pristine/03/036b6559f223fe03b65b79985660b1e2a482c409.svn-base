@@ -1,0 +1,102 @@
+//
+//  MapHttpAPi.m
+//  ThailandGo
+//
+//  Created by Daniel on 15/9/29.
+//  Copyright © 2015年 Daniel. All rights reserved.
+//
+
+#import "ScenicHttpAPi.h"
+
+@implementation ScenicHttpAPi
+/**
+ *  景区详情
+ *
+ */
++ (void)getScenicDetailInfoWithParameters:(id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure{
+    [[self sharedManager] defaultPostWithUrl:scenic_detail_url WithParameters:parameters success:success failure:failure];
+}
+
+/**
+ *  景区名称检索
+ *
+ */
++ (void)getSearchScenicWithParameters:(id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure{
+    [[self sharedManager] defaultPostWithUrl:search_scenic_url WithParameters:parameters success:success failure:failure];
+}
+
+
+/**
+ *  景点详情
+ *
+ */
++ (void)getSpotDetailInfoWithParameters:(id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure{
+    
+    [[self sharedManager] defaultPostWithUrl:spot_detail_url WithParameters:parameters success:success failure:failure];
+    
+}
+
+
+/**
+ *  景点列表
+ *
+ */
++ (void)getSpotListWithParameters:(id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure{
+     [[self sharedManager] defaultPostWithUrl:spot_list_url WithParameters:parameters success:success failure:failure];
+}
+
+
+/**
+ *  景区列表
+ *
+ */
++ (void)getScenicListWithParameters:(id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;{
+     [[self sharedManager] defaultPostWithUrl:scenic_list_url WithParameters:parameters success:success failure:failure];
+}
+
+
+/**
+ *  景区评论列表
+ *
+ */
++ (void)getCommentListWithParameters:(id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure{
+     [[self sharedManager] defaultPostWithUrl:comment_list_url WithParameters:parameters success:success failure:failure];
+}
+
+
+/**
+ *  景区压缩包
+ *
+ */
++ (void)getScenicZipInfoWithParameters:(id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure{
+     [[self sharedManager] defaultPostWithUrl:scenic_zip_url WithParameters:parameters success:success failure:failure];
+}
+
+
+/**
+ *  景区播报点
+ *
+ */
++ (void)getBroadcastListWithParameters:(id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure{
+     [[self sharedManager] defaultPostWithUrl:broadcast_url WithParameters:parameters success:success failure:failure];
+}
+
+/**
+ *  景区兴趣点
+ *
+ */
++ (void)getScenicPoiListWithParameters:(id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure{
+     [[self sharedManager] defaultPostWithUrl:poi_list_url WithParameters:parameters success:success failure:failure];
+}
+
+
+/**
+ *  景区图层
+ *
+ */
++ (void)getScenicMapLayerWithParameters:(id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure{
+     [[self sharedManager] defaultPostWithUrl:map_layer_url WithParameters:parameters success:success failure:failure];
+}
+
+
+@end

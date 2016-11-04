@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZMCAgreementViewController">
+            <connections>
+                <outlet property="contentView" destination="489-XW-Sh9" id="ScS-qN-CZP"/>
+                <outlet property="view" destination="QOR-NH-uKo" id="8Mk-hF-miJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="QOR-NH-uKo">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="489-XW-Sh9">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                </webView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DEw-OV-5nh">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用条款和协议" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bt-tl-Ys1">
+                            <rect key="frame" x="132" y="20" width="112" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kdt-Nr-zX9" customClass="ZMCPayButton">
+                            <rect key="frame" x="0.0" y="20" width="30" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="WTl-84-Chc"/>
+                                <constraint firstAttribute="height" constant="44" id="jnm-Di-FpQ"/>
+                            </constraints>
+                            <state key="normal" image="nav_back"/>
+                            <connections>
+                                <action selector="backBtn:" destination="-1" eventType="touchUpInside" id="f26-r7-ptk"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.16078431369999999" green="0.70588235290000001" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="3bt-tl-Ys1" firstAttribute="centerX" secondItem="DEw-OV-5nh" secondAttribute="centerX" id="Dgs-Al-TXW"/>
+                        <constraint firstItem="3bt-tl-Ys1" firstAttribute="top" secondItem="DEw-OV-5nh" secondAttribute="top" constant="20" id="Gkd-U0-Lyx"/>
+                        <constraint firstItem="Kdt-Nr-zX9" firstAttribute="top" secondItem="DEw-OV-5nh" secondAttribute="top" constant="20" id="LWe-2z-Kew"/>
+                        <constraint firstAttribute="bottom" secondItem="3bt-tl-Ys1" secondAttribute="bottom" id="McJ-qa-DYh"/>
+                        <constraint firstItem="Kdt-Nr-zX9" firstAttribute="leading" secondItem="DEw-OV-5nh" secondAttribute="leading" id="eQ9-kq-81r"/>
+                        <constraint firstAttribute="height" constant="64" id="vU9-dl-WpN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="489-XW-Sh9" secondAttribute="bottom" id="6G2-Kv-xfv"/>
+                <constraint firstItem="489-XW-Sh9" firstAttribute="top" secondItem="DEw-OV-5nh" secondAttribute="bottom" id="M9P-ne-1KQ"/>
+                <constraint firstItem="DEw-OV-5nh" firstAttribute="leading" secondItem="QOR-NH-uKo" secondAttribute="leading" id="QX4-1R-dqV"/>
+                <constraint firstAttribute="trailing" secondItem="489-XW-Sh9" secondAttribute="trailing" id="SWn-rY-F9o"/>
+                <constraint firstItem="489-XW-Sh9" firstAttribute="leading" secondItem="QOR-NH-uKo" secondAttribute="leading" id="hD1-hE-pHv"/>
+                <constraint firstAttribute="trailing" secondItem="DEw-OV-5nh" secondAttribute="trailing" id="nd6-42-OaA"/>
+                <constraint firstItem="DEw-OV-5nh" firstAttribute="top" secondItem="QOR-NH-uKo" secondAttribute="top" id="vw5-9Z-2Oj"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="347" y="70"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="nav_back" width="8" height="15"/>
+    </resources>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NutritionCollocationView">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TjR-Se-6Sb">
+                    <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+                    <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VCh-TR-31a" customClass="LineImageView">
+                    <rect key="frame" x="0.0" y="39" width="160" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="yoF-EW-Y1l"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e1G-ua-HeY" customClass="LineImageVerView">
+                    <rect key="frame" x="159" y="0.0" width="1" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="TCl-2H-3NV"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZH-8G-cmy">
+                    <rect key="frame" x="80" y="0.0" width="80" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="VCh-TR-31a" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="20F-OZ-fxD"/>
+                <constraint firstAttribute="trailing" secondItem="bZH-8G-cmy" secondAttribute="trailing" id="3fz-yJ-Rg1"/>
+                <constraint firstAttribute="bottom" secondItem="bZH-8G-cmy" secondAttribute="bottom" id="Ds0-WM-hIS"/>
+                <constraint firstAttribute="bottom" secondItem="VCh-TR-31a" secondAttribute="bottom" id="Jxp-Z4-fga"/>
+                <constraint firstItem="TjR-Se-6Sb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="OSt-JP-6WN"/>
+                <constraint firstItem="bZH-8G-cmy" firstAttribute="leading" secondItem="TjR-Se-6Sb" secondAttribute="trailing" id="RL6-LI-wKW"/>
+                <constraint firstAttribute="trailing" secondItem="VCh-TR-31a" secondAttribute="trailing" id="ays-m7-3XE"/>
+                <constraint firstItem="TjR-Se-6Sb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ebx-Yr-oAs"/>
+                <constraint firstItem="e1G-ua-HeY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hvi-Nd-u9I"/>
+                <constraint firstAttribute="bottom" secondItem="TjR-Se-6Sb" secondAttribute="bottom" id="ojr-Et-Ay0"/>
+                <constraint firstItem="TjR-Se-6Sb" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1/2" id="xaz-q7-Tzf"/>
+                <constraint firstAttribute="trailing" secondItem="e1G-ua-HeY" secondAttribute="trailing" id="zOq-FS-qBa"/>
+                <constraint firstItem="bZH-8G-cmy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zmd-R0-5JY"/>
+                <constraint firstAttribute="bottom" secondItem="e1G-ua-HeY" secondAttribute="bottom" id="zq6-ZJ-wE1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="nutrition_collocation_name" destination="TjR-Se-6Sb" id="KBm-DF-Xxp"/>
+                <outlet property="nutrition_collocation_quantity" destination="bZH-8G-cmy" id="gGR-2z-ENO"/>
+            </connections>
+            <point key="canvasLocation" x="267" y="430"/>
+        </view>
+    </objects>
+</document>

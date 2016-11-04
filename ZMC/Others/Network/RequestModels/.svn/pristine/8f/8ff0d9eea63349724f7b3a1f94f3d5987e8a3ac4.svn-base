@@ -1,0 +1,21 @@
+//
+//  HomeRequestModel.h
+//  ThailandGo
+//
+//  Created by Daniel on 15/9/28.
+//  Copyright © 2015年 Daniel. All rights reserved.
+//
+
+#import "BaseRequestParamsModel.h"
+
+@interface HomeRequestModel : BaseRequestParamsModel
+
+/**
+ *  获取首页数据
+ *
+ */
++ (NSMutableDictionary *)getHomeInfo;
+
+
+
+@end

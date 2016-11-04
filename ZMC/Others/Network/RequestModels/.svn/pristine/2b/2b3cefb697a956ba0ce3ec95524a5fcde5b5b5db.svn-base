@@ -1,0 +1,24 @@
+//
+//  HomeRequestModel.m
+//  ThailandGo
+//
+//  Created by Daniel on 15/9/28.
+//  Copyright © 2015年 Daniel. All rights reserved.
+//
+
+#import "HomeRequestModel.h"
+
+@implementation HomeRequestModel
+
++ (NSMutableDictionary *)getHomeInfo{
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    [params setValue:@"10152065" forKey:@"command"];
+
+    return [self baseGetInfoFacory:params];
+    
+    
+}
+
+
+@end

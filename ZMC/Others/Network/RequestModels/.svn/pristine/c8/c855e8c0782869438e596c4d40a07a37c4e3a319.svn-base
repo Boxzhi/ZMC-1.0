@@ -1,0 +1,28 @@
+//
+//  CommonRequestModel.m
+//  ThailandGo
+//
+//  Created by Daniel on 15/10/15.
+//  Copyright © 2015年 Daniel. All rights reserved.
+//
+
+#import "CommonRequestModel.h"
+
+@implementation CommonRequestModel
+
+
++ (NSMutableDictionary *)getScenicDetail{
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    NSMutableDictionary *subParams = [NSMutableDictionary dictionary];
+    [subParams setValue:@"1" forKey:@"scenicId"];
+    
+    [params setObject:subParams forKey:@"param"];
+    
+    return [self baseGetInfoFacory:params];
+    
+    
+}
+
+
+@end

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Fuf-mB-G5o" customClass="ZMCFgpwdTwoView">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="输入密码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JvP-yc-qqu">
+                    <rect key="frame" x="0.0" y="0.0" width="75" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="Q5M-z8-12j"/>
+                        <constraint firstAttribute="height" constant="40" id="mpv-NO-3Pn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="再次输入" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVf-kF-uLf">
+                    <rect key="frame" x="0.0" y="41" width="75" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="kDE-lb-89k"/>
+                        <constraint firstAttribute="height" constant="40" id="n00-IM-u69"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入新密码" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4CH-5N-Pld">
+                    <rect key="frame" x="75" y="0.0" width="295" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="f2T-9e-4Zp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请再次输入新密码" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="PWK-yk-s71">
+                    <rect key="frame" x="75" y="41" width="295" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="1s3-VK-MEb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet" returnKeyType="done"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDO-k7-CTi" userLabel="confirmRegButton">
+                    <rect key="frame" x="10" y="131" width="350" height="45"/>
+                    <color key="backgroundColor" red="0.16078431369999999" green="0.70588235290000001" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="adh-mD-UeE"/>
+                    </constraints>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="PWK-yk-s71" secondAttribute="trailing" id="4fx-tg-Rhc"/>
+                <constraint firstAttribute="trailing" secondItem="4CH-5N-Pld" secondAttribute="trailing" id="HOc-WA-kdv"/>
+                <constraint firstItem="JvP-yc-qqu" firstAttribute="leading" secondItem="Fuf-mB-G5o" secondAttribute="leading" id="IzE-7D-OAV"/>
+                <constraint firstItem="4CH-5N-Pld" firstAttribute="top" secondItem="Fuf-mB-G5o" secondAttribute="top" id="J5X-Ce-n6O"/>
+                <constraint firstItem="hDO-k7-CTi" firstAttribute="leading" secondItem="Fuf-mB-G5o" secondAttribute="leading" constant="10" id="MKy-hd-Bx6"/>
+                <constraint firstItem="PWK-yk-s71" firstAttribute="top" secondItem="4CH-5N-Pld" secondAttribute="bottom" constant="1" id="WyK-am-wmB"/>
+                <constraint firstItem="JvP-yc-qqu" firstAttribute="top" secondItem="Fuf-mB-G5o" secondAttribute="top" id="X5X-Xr-M0t"/>
+                <constraint firstItem="hDO-k7-CTi" firstAttribute="top" secondItem="PWK-yk-s71" secondAttribute="bottom" constant="50" id="cdg-2P-UQa"/>
+                <constraint firstItem="UVf-kF-uLf" firstAttribute="leading" secondItem="Fuf-mB-G5o" secondAttribute="leading" id="hYD-49-LAY"/>
+                <constraint firstItem="PWK-yk-s71" firstAttribute="leading" secondItem="UVf-kF-uLf" secondAttribute="trailing" id="tQb-gN-CUC"/>
+                <constraint firstAttribute="trailing" secondItem="hDO-k7-CTi" secondAttribute="trailing" constant="10" id="u1P-Ot-pD2"/>
+                <constraint firstItem="4CH-5N-Pld" firstAttribute="leading" secondItem="JvP-yc-qqu" secondAttribute="trailing" id="vdB-vb-1i6"/>
+                <constraint firstItem="UVf-kF-uLf" firstAttribute="top" secondItem="JvP-yc-qqu" secondAttribute="bottom" constant="1" id="xj4-pG-d1k"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="confirmRegButton" destination="hDO-k7-CTi" id="jcb-yW-zKb"/>
+                <outlet property="onePasswordField" destination="4CH-5N-Pld" id="Cxe-R9-mZo"/>
+                <outlet property="twoPasswordField" destination="PWK-yk-s71" id="ACO-q0-2nJ"/>
+            </connections>
+            <point key="canvasLocation" x="506" y="589"/>
+        </view>
+    </objects>
+</document>

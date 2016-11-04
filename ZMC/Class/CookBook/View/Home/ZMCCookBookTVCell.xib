@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="137" id="KGk-i7-Jjw" customClass="ZMCCookBookTVCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caipu1" translatesAutoresizingMaskIntoConstraints="NO" id="1X1-bS-oEC">
+                        <rect key="frame" x="10" y="5" width="355" height="139"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mengban" translatesAutoresizingMaskIntoConstraints="NO" id="sZt-Km-FcL">
+                        <rect key="frame" x="10" y="44" width="355" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="mHc-gU-1xj"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="土豆蒸糯米" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MkM-ZN-2RK">
+                        <rect key="frame" x="270" y="98" width="85" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.99018024950000005" green="1" blue="0.96612736450000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLb-75-Tyz">
+                        <rect key="frame" x="355" y="124" width="0.0" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="kuV-Ds-yvq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.99018024950000005" green="1" blue="0.96612736450000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sZt-Km-FcL" firstAttribute="trailing" secondItem="1X1-bS-oEC" secondAttribute="trailing" id="1tB-3Z-DAo"/>
+                    <constraint firstItem="sZt-Km-FcL" firstAttribute="bottom" secondItem="1X1-bS-oEC" secondAttribute="bottom" id="Bdr-10-iI9"/>
+                    <constraint firstAttribute="bottom" secondItem="cLb-75-Tyz" secondAttribute="bottom" constant="10" id="Hq3-Jy-S3m"/>
+                    <constraint firstItem="1X1-bS-oEC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="I5s-fq-s3Z"/>
+                    <constraint firstItem="cLb-75-Tyz" firstAttribute="top" secondItem="MkM-ZN-2RK" secondAttribute="bottom" constant="5" id="MpB-SH-ftX"/>
+                    <constraint firstAttribute="bottom" secondItem="1X1-bS-oEC" secondAttribute="bottom" constant="5" id="Zkg-KQ-WBV"/>
+                    <constraint firstAttribute="trailing" secondItem="cLb-75-Tyz" secondAttribute="trailing" constant="20" id="cy9-IA-wHQ"/>
+                    <constraint firstItem="sZt-Km-FcL" firstAttribute="leading" secondItem="1X1-bS-oEC" secondAttribute="leading" id="dHr-D3-gsw"/>
+                    <constraint firstAttribute="trailing" secondItem="1X1-bS-oEC" secondAttribute="trailing" constant="10" id="i3a-II-KDm"/>
+                    <constraint firstItem="1X1-bS-oEC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="jrV-ar-cPR"/>
+                    <constraint firstItem="MkM-ZN-2RK" firstAttribute="trailing" secondItem="cLb-75-Tyz" secondAttribute="trailing" id="zbM-Hw-aVy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="dishName" destination="MkM-ZN-2RK" id="vlw-bJ-NF6"/>
+                <outlet property="dishPic" destination="1X1-bS-oEC" id="zeK-bR-xEw"/>
+                <outlet property="selectNum" destination="cLb-75-Tyz" id="eUa-EZ-GrB"/>
+            </connections>
+            <point key="canvasLocation" x="361.5" y="330"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="caipu1" width="355" height="150"/>
+        <image name="mengban" width="355" height="102"/>
+    </resources>
+</document>

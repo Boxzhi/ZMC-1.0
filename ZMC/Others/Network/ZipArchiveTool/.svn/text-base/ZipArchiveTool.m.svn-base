@@ -1,0 +1,33 @@
+//
+//  ZipArchiveTool.m
+//  ThailandGo
+//
+//  Created by Daniel on 15/10/9.
+//  Copyright © 2015年 Daniel. All rights reserved.
+//
+
+#import "ZipArchiveTool.h"
+#import <SSZipArchive.h>
+@implementation ZipArchiveTool
+
++ (BOOL)unzipFileAtPath:(NSString *)path toDestination:(NSString *)destination{
+    
+    return [SSZipArchive unzipFileAtPath:path toDestination:destination];
+}
+
+
++ (BOOL)unzipFileAtPath:(NSString *)path toDestination:(NSString *)destination overwrite:(BOOL)overwrite password:(NSString *)password error:(NSError **)error{
+    
+    return [SSZipArchive unzipFileAtPath:path toDestination:destination overwrite:YES password:@"38389029" error:error];
+}
+
++ (NSString *)zipAppendingPathComponent:(NSString *)filename{
+    
+    NSString *cacheDirectory = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *downloadPath = [cacheDirectory stringByAppendingPathComponent:filename];
+    // 解压
+    NSString *zipPath = downloadPath;
+    return zipPath;
+}
+
+@end

@@ -1,0 +1,45 @@
+//
+//  ZipArchiveTool.h
+//  ThailandGo
+//
+//  Created by Daniel on 15/10/9.
+//  Copyright © 2015年 Daniel. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface ZipArchiveTool : NSObject
+
+/**
+ *  解压普通zip文件
+ *
+ *  @param path        要解压的zip文件
+ *  @param destination 解压到的路径
+ *
+ *  @return 是否解压成功
+ */
++ (BOOL)unzipFileAtPath:(NSString *)path toDestination:(NSString *)destination;
+
+/**
+ *  解压加密文件
+ *
+ *  @param path        要解压的zip文件
+ *  @param destination 解压到的路径
+ *  @param overwrite   是否重写
+ *  @param password    密码
+ *  @param error       错误信息
+ *
+ *  @return 是否解压成功
+ */
++ (BOOL)unzipFileAtPath:(NSString *)path toDestination:(NSString *)destination overwrite:(BOOL)overwrite password:(NSString *)password error:(NSError **)error;
+
+/**
+ *  统一管理路径
+ *
+ *  @param filename 根据文件名字生成路径
+ *
+ *  @return 路径
+ */
++ (NSString *)zipAppendingPathComponent:(NSString *)filename;
+
+@end

@@ -1,0 +1,157 @@
+//
+//  ScenicRequestModel.m
+//  ThailandGo
+//
+//  Created by Daniel on 15/10/15.
+//  Copyright © 2015年 Daniel. All rights reserved.
+//
+
+#import "ScenicRequestModel.h"
+
+@implementation ScenicRequestModel
+
+
+/**
+ *  景区详情
+ *
+ */
++ (NSMutableDictionary *)getScenicDetailWithScenicId:(NSString *)scenicId{
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    [params setValue:scenicId forKey:@"scenicId"];
+    
+    return [self baseGetInfoFacory:params];
+    
+}
+
+/**
+ *  景区名称检索
+ *
+ */
++ (NSMutableDictionary *)getSearchScenicWithScenicName:(NSString *)scenicName{
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    [params setValue:scenicName forKey:@"scenicName"];
+    
+    return [self baseGetInfoFacory:params];
+    
+}
+
+/**
+ *  景点详情
+ *
+ */
++ (NSMutableDictionary *)getScenicDetailWithScenicSpotId:(NSString *)scenicSpotId{
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    [params setValue:scenicSpotId forKey:@"scenicSpotId"];
+    
+    return [self baseGetInfoFacory:params];
+    
+}
+
+
+/**
+ *  景点列表
+ *
+ */
++ (NSMutableDictionary *)getSpotListWithScenicId:(NSString *)scenicId page:(NSString *)page pageSize:(NSString *)pageSize{
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    [params setValue:scenicId forKey:@"scenicId"];
+    
+    return [self baseGetInfoFacory:params];
+    
+}
+
+
+
+/**
+ *  景区列表
+ *
+ */
++ (NSMutableDictionary *)getScenicListWithCityId:(NSString *)cityId distance:(NSString *)distance filter:(NSString *)filter lat:(NSString *)lat lng:(NSString *)lng page:(NSString *)page pageSize:(NSString *)pageSize scenicName:(NSString *)scenicName sort:(NSString *)sort{
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    [params setValue:scenicName forKey:@"scenicName"];
+    
+    return [self baseGetInfoFacory:params];
+    
+}
+
+
+/**
+ *  景区评论列表
+ *
+ */
++ (NSMutableDictionary *)getCommentListWithScenicId:(NSString *)scenicId page:(NSString *)page pageSize:(NSString *)pageSize{
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    [params setValue:scenicId forKey:@"scenicId"];
+    
+    return [self baseGetInfoFacory:params];
+    
+}
+
+
+
+/**
+ *  景区压缩包
+ *
+ */
+
++ (NSMutableDictionary *)getScenicZipWithScenicId:(NSString *)scenicId{
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    [params setValue:scenicId forKey:@"scenicId"];
+    
+    return [self baseGetInfoFacory:params];
+    
+}
+
+
+
+
+/**
+ *  景区播报点
+ *
+ */
++ (NSMutableDictionary *)getBrocastWithScenicSpotId:(NSString *)scenicSpotId{
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    [params setValue:scenicSpotId forKey:@"scenicSpotId"];
+    
+    return [self baseGetInfoFacory:params];
+}
+
+
+/**
+ *  景区兴趣点
+ *
+ */
++ (NSMutableDictionary *)getPoiListWithScenicId:(NSString *)scenicId page:(NSString *)page pageSize:(NSString *)pageSize{
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    [params setValue:scenicId forKey:@"scenicId"];
+    
+    return [self baseGetInfoFacory:params];
+}
+
+
+/**
+ *  景区图层
+ *
+ */
+
++(NSMutableDictionary *)getMapLayerWithScenicId:(NSString *)scenicId{
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    [params setValue:scenicId forKey:@"scenicId"];
+    
+    return [self baseGetInfoFacory:params];
+}
+
+
+
+
+
+
+
+@end

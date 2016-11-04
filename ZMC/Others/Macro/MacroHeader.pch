@@ -1,0 +1,184 @@
+//
+//  MacroHeader.pch
+//  ZMC
+//
+//  Created by 睿途网络 on 16/4/25.
+//  Copyright © 2016年 ruitu. All rights reserved.
+//
+
+#ifndef MacroHeader_pch
+#define MacroHeader_pch
+
+
+#import "UIBarButtonItem+Item.h"
+#import "UIView+Frame.h"
+//#import <SVProgressHUD/SVProgressHUD.h>
+#import <MLLabel.h>
+#import <MLLinkLabel.h>
+#import "HYBNetworking.h"
+#import <MJExtension.h>
+#import "UIImageView+Header.h"
+#import "ZMCTokenTool.h"
+#import "ZMCLoginViewController.h"
+#import <Masonry.h>
+#import <UIImageView+WebCache.h>
+#import "HZZCustomShareView.h"
+#import "UITableView+Extend.h"
+
+/**
+ *  获得RGB颜色
+ */
+#define RGBA(r, g, b, a)                    [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r, g, b)                        RGBA(r, g, b, 1.0f)
+
+
+// 获取程序版本号
+#define CLIENT_VERSION [[[NSBundle mainBundle] infoDictionary]objectForKey:@"CFBundleShortVersionString"]
+// 获取系统版本号
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+
+/**
+ *  友盟分享
+ */
+#define UMAppKey            @"572c068767e58eb059002c66"
+
+#define WeChatAppId         @"wxe31a9a3fa00cbaa4"
+#define WeChatAppSecret     @"d6f00e42d07c45c46bd7bcd755254f95"
+
+
+#define QQAppID             @"1105308691"
+#define QQAppKey            @"DlmGGgrbi9Y7KFUz"
+/**
+ *  Bugly
+ */
+#define BuglyAppKey         @"900037907"
+
+/**
+ *  极光推送
+ */
+#define JPUSHKey            @"54802cb15ab8c457a5bced18"
+
+
+
+/**
+ *  十六进制颜色转UIColor
+ */
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+
+/*自定义Log*/
+#define ZMCFunc ZMCLog(@"%s",__func__)
+// 调试
+#ifdef DEBUG
+#define CHANNEL             @"Test"
+#define ZMCLog(...) NSLog(__VA_ARGS__)
+#else
+// 发布
+#define ZMCLog(...)
+#define CHANNEL             @"AppStore"
+#endif
+
+
+/**
+ *  屏幕宽度
+ */
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+
+/**
+ *  屏幕高度
+ */
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+/**
+ *  主题的绿色
+ */
+#define ThemeGreenColor [UIColor colorWithRed:41/255.0 green:180/255.0 blue:61/255.0 alpha:1]
+
+
+/**
+ *  文字的三种颜色，浅黑，中黑，深黑
+ */
+#define StringLightColor [UIColor colorWithRed:136/255.0 green:136/255.0 blue:136/255.0 alpha:1]
+#define StringMiddleColor [UIColor colorWithRed:102/255.0 green:102/255.0 blue:102/255.0 alpha:1]
+#define StringDarkColor [UIColor colorWithRed:68/255.0 green:68/255.0 blue:68/255.0 alpha:1]
+
+/**
+ *  十六进制颜色转UIColor
+ */
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+
+/**
+ *  获取UUID保存
+ */
+#define kService [NSBundle mainBundle].bundleIdentifier
+#define kAccount @"com.ruitukeji.ZMC-client"
+
+
+//#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_9_0
+//#define ALERT_MSG(title,msg) {UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:msg preferredStyle:UIAlertControllerStyleAlert]; UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];[alertController addAction:cancelAction];[alertController addAction:okAction];} 
+//#else 
+#define ALERT_MSG(title,msg) [[[UIAlertView alloc]initWithTitle:title message:msg delegate:nil cancelButtonTitle:@"我知道了" otherButtonTitles:nil, nil]show];
+//#endif
+
+/**
+ *  机型
+ */
+//#define iPhone5 struct ut
+
+
+
+#define USER_DEFAULT [NSUserDefaults standardUserDefaults]
+
+#define Market_id [USER_DEFAULT objectForKey:@"market_id"]
+#define Market_name [USER_DEFAULT objectForKey:@"market_name"]
+
+#define isReachable_client [USER_DEFAULT objectForKey:@"isReachable_client"]
+
+#define TOKEN [USER_DEFAULT objectForKey:@"access_token"]
+#define REFRESH_TOKEN [USER_DEFAULT objectForKey:@"refresh_token"]
+#define EXPIRE_TIME [USER_DEFAULT objectForKey:@"expire_time"]
+#define LOGIN_TIME [USER_DEFAULT objectForKey:@"login_time"]
+
+
+#define ZMCTokenToolShared [ZMCTokenTool shared]
+
+//#define ZMCTokenTool [ZMCTokenTool shared]
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* MacroHeader_pch */
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+
+
+#import "DeviceDefine.h"
+#import "FrameDefine.h"
+#import "ColorDefine.h"
+#import "ToolDefine.h"
+#import "HttpConfig.h"
+
+#import "UserInfo.h"
+#import "Singer.h"
+#import "CommonMethod.h"
+#import "NSString+Category.h"
+#import "WeChatStylePlaceHolder.h"
+#import "NSDictionary+FarmInformation.h"
+#import "OMGToast.h"
+
+#import "LoginSuccessModel.h"
+#import <SVProgressHUD/SVProgressHUD.h>
+#import <ReactiveCocoa.h>
+#import <CYLTableViewPlaceHolder/CYLTableViewPlaceHolder.h>
+#import <MJRefresh.h>
+
+#import "ZMCLoginViewController.h"
+#import <UIImageView+WebCache.h>
+#import <UIButton+WebCache.h>
+
+#import "ChatbadgecountManager.h"
+
+#endif

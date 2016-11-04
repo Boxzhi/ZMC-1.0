@@ -1,0 +1,18 @@
+platform :ios, "7.0"
+
+pod 'SDCycleScrollView'
+pod 'AFNetworking'
+pod 'SDWebImage', '~>3.8'
+pod 'MJExtension'
+pod 'MJRefresh'
+pod 'Masonry'
+pod 'WMPageController'
+pod 'UMengSocialCOM', '~> 5.1.0'
+pod 'Bugly'
+pod 'SVProgressHUD'
+pod 'CYLTableViewPlaceHolder'
+pod 'ReactiveCocoa', '~> 2.5'
+pod 'MLLabel'
+pod 'WebViewJavascriptBridge'
+pod 'RNCachingURLProtocol'
+pod 'Appirater'

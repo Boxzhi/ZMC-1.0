@@ -1,0 +1,84 @@
+//
+//  MapHttpAPi.h
+//  ThailandGo
+//
+//  Created by Daniel on 15/9/29.
+//  Copyright © 2015年 Daniel. All rights reserved.
+//
+
+#import "BaseHTTPRequestOperationManager.h"
+
+@interface ScenicHttpAPi : BaseHTTPRequestOperationManager
+
+/**
+ *  景区详情
+ *
+ */
++ (void)getScenicDetailInfoWithParameters:(id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
+
+/**
+ *  景区名称检索
+ *
+ */
++ (void)getSearchScenicWithParameters:(id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
+
+
+/**
+ *  景点详情
+ *
+ */
++ (void)getSpotDetailInfoWithParameters:(id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
+
+
+/**
+ *  景点列表
+ *
+ */
++ (void)getSpotListWithParameters:(id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
+
+
+/**
+ *  景区列表
+ *
+ */
++ (void)getScenicListWithParameters:(id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
+
+
+/**
+ *  景区评论列表
+ *
+ */
++ (void)getCommentListWithParameters:(id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
+
+
+/**
+ *  景区压缩包
+ *
+ */
++ (void)getScenicZipInfoWithParameters:(id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
+
+
+/**
+ *  景区播报点
+ *
+ */
++ (void)getBroadcastListWithParameters:(id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
+
+/**
+ *  景区兴趣点
+ *
+ */
++ (void)getScenicPoiListWithParameters:(id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
+
+
+/**
+ *  景区图层
+ *
+ */
++ (void)getScenicMapLayerWithParameters:(id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
+
+
+
+
+
+@end

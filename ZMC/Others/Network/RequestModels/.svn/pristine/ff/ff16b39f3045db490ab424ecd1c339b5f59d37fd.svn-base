@@ -1,0 +1,92 @@
+//
+//  ScenicRequestModel.h
+//  ThailandGo
+//
+//  Created by Daniel on 15/10/15.
+//  Copyright © 2015年 Daniel. All rights reserved.
+//
+
+#import "BaseRequestParamsModel.h"
+
+@interface ScenicRequestModel : BaseRequestParamsModel
+
+/**
+ *  获取首页数据
+ *
+ */
++ (NSMutableDictionary *)getHomeInfo;
+
+/**
+ *  景区详情
+ *
+ */
++ (NSMutableDictionary *)getScenicDetailWithScenicId:(NSString *)scenicId;
+
+/**
+ *  景区名称检索
+ *
+ */
++ (NSMutableDictionary *)getSearchScenicWithScenicName:(NSString *)scenicName;
+
+
+/**
+ *  景点详情
+ *
+ */
++ (NSMutableDictionary *)getScenicDetailWithScenicSpotId:(NSString *)scenicSpotId;
+
+
+/**
+ *  景点列表
+ *
+ */
++ (NSMutableDictionary *)getSpotListWithScenicId:(NSString *)scenicId page:(NSString *)page pageSize:(NSString *)pageSize;
+
+
+/**
+ *  景区列表
+ *
+ */
++ (NSMutableDictionary *)getScenicListWithCityId:(NSString *)cityId distance:(NSString *)distance filter:(NSString *)filter  lat:(NSString *)lat lng:(NSString *)lng page:(NSString *)page pageSize:(NSString *)pageSize scenicName:(NSString *)scenicName sort:(NSString *)sort;
+
+
+
+
+/**
+ *  景区评论列表
+ *
+ */
++ (NSMutableDictionary *)getCommentListWithScenicId:(NSString *)scenicId page:(NSString *)page pageSize:(NSString *)pageSize ;
+
+
+/**
+ *  景区压缩包
+ *
+ */
++ (NSMutableDictionary *)getScenicZipWithScenicId:(NSString *)scenicId;
+
+
+/**
+ *  景区播报点
+ *
+ */
++ (NSMutableDictionary *)getBrocastWithScenicSpotId:(NSString *)scenicSpotId;
+
+
+
+/**
+ *  景区兴趣点
+ *
+ */
++ (NSMutableDictionary *)getMapLayerWithScenicId:(NSString *)scenicId;
+
+
+
+/**
+ *  景区图层
+ *
+ */
+
++ (NSMutableDictionary *)getPoiListWithScenicId:(NSString *)scenicId page:(NSString *)page pageSize:(NSString *)pageSize  ;
+
+@end

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" rowHeight="30" id="KGk-i7-Jjw" customClass="ZMCCommentsTVCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="29"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUJ-xF-fp6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="29"/>
+                        <state key="normal" title="Button"/>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right" translatesAutoresizingMaskIntoConstraints="NO" id="nEc-uU-3zd">
+                        <rect key="frame" x="300" y="7" width="10" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="QKS-5A-aTq"/>
+                            <constraint firstAttribute="width" constant="10" id="iJp-Gw-pdx"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fivestar" translatesAutoresizingMaskIntoConstraints="NO" id="9yb-D1-f2i">
+                        <rect key="frame" x="210" y="8" width="80" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="coe-ex-2fg"/>
+                            <constraint firstAttribute="height" constant="16" id="yuv-nC-gXG"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9yb-D1-f2i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="AtU-OQ-tLH"/>
+                    <constraint firstAttribute="trailing" secondItem="nEc-uU-3zd" secondAttribute="trailing" constant="10" id="DqC-7m-Qk6"/>
+                    <constraint firstAttribute="bottom" secondItem="bUJ-xF-fp6" secondAttribute="bottom" id="ENl-Wf-YgW"/>
+                    <constraint firstAttribute="trailing" secondItem="bUJ-xF-fp6" secondAttribute="trailing" id="Gn9-Uj-qe7"/>
+                    <constraint firstItem="bUJ-xF-fp6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ePi-Ps-SvJ"/>
+                    <constraint firstItem="bUJ-xF-fp6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="rxj-qX-e6Z"/>
+                    <constraint firstItem="nEc-uU-3zd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="x5w-Mh-9gB"/>
+                    <constraint firstItem="nEc-uU-3zd" firstAttribute="leading" secondItem="9yb-D1-f2i" secondAttribute="trailing" constant="10" id="z1C-0u-sqn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commintDetailButton" destination="bUJ-xF-fp6" id="TqL-tX-Wix"/>
+            </connections>
+            <point key="canvasLocation" x="270" y="324"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="fivestar" width="89" height="15"/>
+        <image name="right" width="8" height="14"/>
+    </resources>
+</document>

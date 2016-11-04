@@ -1,0 +1,20 @@
+//
+//  HomeHttpAPI.h
+//  ThailandGo
+//
+//  Created by Daniel on 15/9/28.
+//  Copyright © 2015年 Daniel. All rights reserved.
+//
+
+#import "BaseHTTPRequestOperationManager.h"
+
+@interface HomeHttpAPI : BaseHTTPRequestOperationManager
+
+/**
+ *  获取首页数据
+ *
+ */
++ (void)postHomeInfoWithParameters:(id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
+
+
+@end

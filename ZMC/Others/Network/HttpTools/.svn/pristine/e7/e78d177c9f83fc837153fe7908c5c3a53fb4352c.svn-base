@@ -1,0 +1,30 @@
+//
+//  HomeHttpAPI.m
+//  ThailandGo
+//
+//  Created by Daniel on 15/9/28.
+//  Copyright © 2015年 Daniel. All rights reserved.
+//
+
+#import "HomeHttpAPI.h"
+#import "HttpConfig.h"
+
+@implementation HomeHttpAPI
+
+
+/**
+ *  获取首页数据
+ *
+ *  @param urlString  <#urlString description#>
+ *  @param parameters <#parameters description#>
+ *  @param success    <#success description#>
+ *  @param failure    <#failure description#>
+ */
++ (void)postHomeInfoWithParameters:(id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure{
+    
+    [[self sharedManager] defaultPostWithUrl:search_scenic_url WithParameters:parameters success:success failure:failure];
+ 
+    
+}
+
+@end

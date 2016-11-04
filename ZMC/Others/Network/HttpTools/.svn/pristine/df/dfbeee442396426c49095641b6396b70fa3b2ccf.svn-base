@@ -1,0 +1,16 @@
+//
+//  CommonHttpAPI.m
+//  ThailandGo
+//
+//  Created by Daniel on 15/10/15.
+//  Copyright © 2015年 Daniel. All rights reserved.
+//
+
+#import "CommonHttpAPI.h"
+
+@implementation CommonHttpAPI
+
+
+
+
+@end

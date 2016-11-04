@@ -1,0 +1,78 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - Appirater (2.0.5)
+  - Bugly (2.3.1)
+  - CYLTableViewPlaceHolder (1.0.8)
+  - Masonry (1.0.1)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.12)
+  - MLLabel (1.10.1)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - RNCachingURLProtocol (0.0.2)
+  - SDCycleScrollView (1.65):
+    - SDWebImage (~> 3.7)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
+  - SVProgressHUD (2.0.3)
+  - UMengSocialCOM (5.1.0)
+  - WebViewJavascriptBridge (5.0.5)
+  - WMPageController (1.8.8)
+
+DEPENDENCIES:
+  - AFNetworking
+  - Appirater
+  - Bugly
+  - CYLTableViewPlaceHolder
+  - Masonry
+  - MJExtension
+  - MJRefresh
+  - MLLabel
+  - ReactiveCocoa (~> 2.5)
+  - RNCachingURLProtocol
+  - SDCycleScrollView
+  - SDWebImage (~> 3.8)
+  - SVProgressHUD
+  - UMengSocialCOM (~> 5.1.0)
+  - WebViewJavascriptBridge
+  - WMPageController
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Appirater: e7c0a47fb67ee5041ce8479e6ba960927fb40264
+  Bugly: c8ece2fa5bdcb404abdd0e07131e8129f580d893
+  CYLTableViewPlaceHolder: 44075c119aab78bbc514c75d771d6565e19938e8
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  MLLabel: 9929df486957b30317f76122f0b087d932af094f
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  RNCachingURLProtocol: 3240c31b468c58eb6363d0ffdc1e0acc0b98ca76
+  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  UMengSocialCOM: 8fa4732b03757161aaa8aab97be7d980adb9ccdb
+  WebViewJavascriptBridge: a4d502315f1b8d9a51cd6a9174147ed567ec3bc5
+  WMPageController: 17f093c7ad34507775b62d537821aa4d6de54e7b
+
+COCOAPODS: 0.39.0
